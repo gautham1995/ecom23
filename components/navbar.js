@@ -5,11 +5,11 @@ const navbarComp = `
     <!-- Search Box-->
     <div class="search-box shadow-sm">
       <button class="dismiss d-flex align-items-center">
-        <svg class="svg-icon svg-icon-heavy">
-          <use xlink:href="#close-1"> </use>
-        </svg>
+        <span class="svg-icon svg-icon-heavy">
+        <i class="fa-solid fa-xmark"></i>
+        </span>
       </button>
-      <form id="searchForm" action="#" role="search">
+      <form id="searchForm" action="#!" role="search">
         <input class="form-control shadow-0" type="text" placeholder="Search...">
       </form>
     </div>
@@ -28,15 +28,15 @@ const navbarComp = `
         <ul class="nav-menu list-unstyled d-flex flex-md-row align-items-md-center">
           <!-- Search-->
           <li class="nav-item d-flex align-items-center"><a id="search" href="#">
-              <svg class="svg-icon svg-icon-xs svg-icon-heavy">
-                <use xlink:href="#find-1"> </use>
-              </svg></a></li>
-          <!-- Notifications-->
+              <span class="svg-icon svg-icon-sm svg-icon-heavy">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              </span></a></li>
+          <!-- Notifications -->
           <li class="nav-item dropdown"> <a class="nav-link text-white" id="notifications" href="#"
               data-bs-toggle="dropdown" aria-expanded="false">
-              <svg class="svg-icon svg-icon-xs svg-icon-heavy">
-                <use xlink:href="#chart-1"> </use>
-              </svg><span class="badge bg-red badge-corner fw-normal">12</span></a>
+              <span class="svg-icon svg-icon-sm svg-icon-heavy">
+              <i class="fa-solid fa-message"></i>
+              </span><span class="badge bg-red badge-corner fw-normal">12</span></a>
             <ul class="dropdown-menu dropdown-menu-end mt-3 shadow-sm" aria-labelledby="notifications">
               <li><a class="dropdown-item py-3" href="#">
                   <div class="d-flex">
@@ -74,9 +74,9 @@ const navbarComp = `
               <li><a class="dropdown-item py-3" href="#">
                   <div class="d-flex">
                     <div class="icon icon-sm bg-green">
-                      <svg class="svg-icon svg-icon-xs svg-icon-heavy">
-                        <use xlink:href="#chats-1"> </use>
-                      </svg>
+                    <svg class="svg-icon svg-icon-xs svg-icon-heavy">
+                    <use xlink:href="#checked-window-1"> </use>
+                  </svg>
                     </div>
                     <div class="ms-3"><span class="h6 d-block fw-normal mb-1 text-xs text-gray-600">New 2 WhatsApp
                         messages</span><small class="small text-gray-600">10 minutes ago</small></div>
@@ -86,12 +86,12 @@ const navbarComp = `
                     class="text-xs text-gray-600">view all notifications </strong></a></li>
             </ul>
           </li>
-          <!-- Messages                        -->
+          <!-- Messages -->
           <li class="nav-item dropdown"> <a class="nav-link text-white" id="messages" rel="nofollow" href="#"
               data-bs-toggle="dropdown" aria-expanded="false">
-              <svg class="svg-icon svg-icon-xs svg-icon-heavy">
-                <use xlink:href="#envelope-1"> </use>
-              </svg><span class="badge bg-orange badge-corner fw-normal">10</span></a>
+              <span class="svg-icon svg-icon-sm svg-icon-heavy">
+              <i class="fa-solid fa-bell"></i>
+              </span><span class="badge bg-orange badge-corner fw-normal">10</span></a>
             <ul class="dropdown-menu dropdown-menu-end mt-3 shadow-sm" aria-labelledby="messages">
               <li><a class="dropdown-item d-flex py-3" href="#"> <img class="img-fluid rounded-circle"
                     src="img/avatar-1.jpg" alt="..." width="45">
@@ -112,7 +112,7 @@ const navbarComp = `
                     messages </strong></a></li>
             </ul>
           </li>
-          <!-- Languages dropdown    -->
+          <!-- Languages dropdown -->
           <li class="nav-item dropdown"><a class="nav-link text-white dropdown-toggle d-flex align-items-center"
               id="languages" href="#" data-bs-toggle="dropdown" aria-expanded="false"><img class="me-2"
                 src="img/flags/16/US.png" alt="English"><span class="d-none d-sm-inline-block">English</span></a>
@@ -123,12 +123,13 @@ const navbarComp = `
                     alt="English"><span class="text-xs text-gray-700">French </span></a></li>
             </ul>
           </li>
-          <!-- Logout    -->
+          <!-- Logout -->
           <li class="nav-item"><a class="nav-link text-white" href="login.html"> <span
                 class="d-none d-sm-inline">Logout</span>
-              <svg class="svg-icon svg-icon-xs svg-icon-heavy">
-                <use xlink:href="#security-1"> </use>
-              </svg></a></li>
+              <span class="svg-icon svg-icon-sm svg-icon-heavy">
+              <i class="fa-solid fa-arrow-right-from-bracket"></i>
+              </span>
+            </a></li>
         </ul>
       </div>
     </div>
